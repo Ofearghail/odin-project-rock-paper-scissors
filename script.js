@@ -2,11 +2,11 @@ var playerScore = 0;
 var computerScore = 0;
 
 function getComputerChoice() {
-    randNum = Math.random();
+    let randNum = Math.random();
 
     if (randNum < 1 / 3) {
         return "paper";
-    } else if (randNum <= 2 / 3 && randNum >= 1 / 3) {
+    } else if (randNum < 2 / 3) {
         return "rock";
     } else {
         return "scissors";
